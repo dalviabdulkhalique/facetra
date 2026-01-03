@@ -1,159 +1,109 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
-import { Shield, Award, Gem, Globe } from 'lucide-react';
-import { motion } from 'framer-motion';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FACETRA | Premium Gemstone Trading House</title>
 
-const Home = () => {
-  const trustIndicators = [
-    {
-      icon: Shield,
-      title: 'Certified Authenticity',
-      description: 'Every gemstone comes with international certification'
-    },
-    {
-      icon: Award,
-      title: 'Premium Quality',
-      description: 'Handpicked selection of the finest gemstones'
-    },
-    {
-      icon: Gem,
-      title: 'Natural Stones',
-      description: '100% natural, ethically sourced precious stones'
-    },
-    {
-      icon: Globe,
-      title: 'Global Standards',
-      description: 'IGI and GIA certified gemstone trading'
+  <!-- SEO -->
+  <meta name="description" content="FACETRA is a premium gemstone trading house dealing in certified natural gemstones including diamonds, rubies, sapphires, emeralds, and precious stones." />
+  <meta name="keywords" content="certified gemstones, diamond trader, ruby sapphire emerald, precious stones, gemstone trading house" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #111815, #050706);
+      color: #F4F1EC;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
-  ];
 
-  return (
-    <>
-      <Helmet>
-        <title>FACETRA - Premium Gemstone Trading | Certified Diamonds, Ruby, Sapphire & Emerald</title>
-        <meta name="description" content="FACETRA is your trusted partner in premium gemstone trading. Explore our certified collection of diamonds, rubies, sapphires, emeralds, and semi-precious stones with IGI and GIA certification." />
-      </Helmet>
+    .container {
+      max-width: 720px;
+      padding: 40px 20px;
+    }
 
-      {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[#d4af37]/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
-        </div>
+    img {
+      width: 260px;
+      max-width: 90%;
+      margin-bottom: 30px;
+    }
 
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="mb-8"
-            >
-              <img 
-                src="https://horizons-cdn.hostinger.com/d93f8c20-dc25-4b08-aaff-7cd5edc94a19/338621fe00e5e2384917c3ddda6ab304.png" 
-                alt="FACETRA - Premium Gemstone Trading House"
-                className="h-32 w-32 mx-auto mb-6"
-              />
-            </motion.div>
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      letter-spacing: 2px;
+      color: #C9A24D;
+      margin: 0;
+    }
 
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-5xl md:text-7xl font-serif font-bold text-[#d4af37] mb-6"
-            >
-              FACETRA
-            </motion.h1>
+    h2 {
+      font-size: 18px;
+      font-weight: 300;
+      color: #D6D6D6;
+      margin: 12px 0 40px;
+    }
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-xl md:text-2xl text-gray-300 mb-4"
-            >
-              Premium Gemstone Trading House
-            </motion.p>
+    .coming {
+      font-size: 20px;
+      letter-spacing: 4px;
+      color: #9A9A9A;
+      margin-bottom: 30px;
+    }
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-lg text-gray-400 mb-10 max-w-2xl mx-auto"
-            >
-              Discover exceptional diamonds, rubies, sapphires, emeralds, and semi-precious stones. Each piece certified by international authorities, ethically sourced, and selected for discerning collectors.
-            </motion.p>
+    .about {
+      font-size: 14px;
+      color: #B0B0B0;
+      line-height: 1.7;
+    }
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center"
-            >
-              <Link to="/collection">
-                <Button className="bg-[#d4af37] hover:bg-[#b8941f] text-black font-semibold px-8 py-6 text-lg">
-                  View Collection
-                </Button>
-              </Link>
-              <Link to="/contact">
-                <Button variant="outline" className="border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37] hover:text-black px-8 py-6 text-lg">
-                  Contact Us
-                </Button>
-              </Link>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+    .contact {
+      margin-top: 30px;
+      font-size: 14px;
+    }
 
-      {/* Trust Indicators */}
-      <section className="py-20 bg-gradient-to-b from-transparent to-[#0d1512]/50">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {trustIndicators.map((indicator, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center p-6 rounded-lg bg-[#0a0f0d]/50 border border-[#d4af37]/20 hover:border-[#d4af37]/40 transition-all"
-              >
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#d4af37]/10 mb-4">
-                  <indicator.icon className="w-8 h-8 text-[#d4af37]" />
-                </div>
-                <h3 className="text-lg font-semibold text-[#d4af37] mb-2">
-                  {indicator.title}
-                </h3>
-                <p className="text-sm text-gray-400">
-                  {indicator.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+    .contact a {
+      color: #C9A24D;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(201,162,77,0.4);
+      padding-bottom: 2px;
+    }
 
-      {/* Why Choose Section Preview */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl font-serif font-bold text-[#d4af37] mb-6">
-              Trusted Gemstone Trading Since Generations
-            </h2>
-            <p className="text-lg text-gray-400 mb-8">
-              FACETRA represents decades of expertise in gemstone trading, combining traditional knowledge with modern certification standards. Our commitment to authenticity, quality, and ethical sourcing has made us a trusted name in the industry.
-            </p>
-            <Link to="/why-choose">
-              <Button variant="outline" className="border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37] hover:text-black">
-                Learn More About FACETRA
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-};
+    @media (max-width: 600px) {
+      h1 { font-size: 36px; }
+      h2 { font-size: 16px; }
+    }
+  </style>
+</head>
 
-export default Home;
+<body>
+  <div class="container">
+
+    <!-- LOGO -->
+    <img src="logo.png" alt="FACETRA Logo">
+
+    <h1>FACETRA</h1>
+    <h2>Premium Gemstone Trading House</h2>
+
+    <div class="coming">COMING SOON</div>
+
+    <div class="about">
+      Natural & certified precious and semi-precious gemstones.<br>
+      Ethically sourced • Expertly curated • Trade focused.
+    </div>
+
+    <div class="contact">
+      Enquiries via <a href="https://wa.me/917219791341">WhatsApp</a><br>
+      Mumbai • PAN India
+    </div>
+
+  </div>
+</body>
+</html>
