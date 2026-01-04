@@ -3,24 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>FACETRA | Premium Gemstone Trading House</title>
 
-  <meta name="description" content="FACETRA is a premium gemstone trading house dealing in certified natural gemstones, diamonds and precious stones. Coming soon." />
-  <meta name="keywords" content="Gemstones, Diamonds, Precious Stones, Certified Gemstones, Gem Trading India, FACETRA" />
+  <meta name="description" content="FACETRA – Premium Gemstone Trading House. Natural & certified precious and semi-precious gemstones. Coming Soon." />
 
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="home">
 
   <!-- HEADER -->
   <header class="header">
     <div class="logo-area">
-      <img src="logo.png" alt="FACETRA Logo" />
-      <span>FACETRA</span>
+      <img src="logo.png" alt="FACETRA Logo">
+      FACETRA
     </div>
 
-    <nav>
+    <nav class="desktop-nav">
       <a href="#home">Home</a>
       <a href="#coming">Collection</a>
       <a href="#coming">Certification</a>
@@ -28,58 +30,86 @@
       <a href="#coming">About</a>
       <a href="#coming">Contact</a>
     </nav>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
   </header>
 
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="mobile-nav">
+    <a href="#home" onclick="toggleMenu()">Home</a>
+    <a href="#coming" onclick="toggleMenu()">Collection</a>
+    <a href="#coming" onclick="toggleMenu()">Certification</a>
+    <a href="#coming" onclick="toggleMenu()">Why FACETRA</a>
+    <a href="#coming" onclick="toggleMenu()">About</a>
+    <a href="#coming" onclick="toggleMenu()">Contact</a>
+  </div>
+
   <!-- HERO -->
-  <section id="home" class="hero">
-    <img src="logo.png" class="hero-logo" alt="FACETRA Logo" />
+  <section class="hero" id="coming">
+    <img src="logo.png" alt="FACETRA Logo">
 
     <h1>FACETRA</h1>
     <h2>Premium Gemstone Trading House</h2>
 
-    <div id="coming" class="coming-soon">
-      COMING SOON
-    </div>
+    <div class="coming-box">COMING SOON</div>
 
-    <p class="tagline">
-      Natural & certified precious and semi-precious gemstones.<br />
+    <p class="hero-text">
+      Natural & certified precious and semi-precious gemstones.<br>
       Ethically sourced • Expertly curated • Trade focused.
     </p>
-
-    <a class="whatsapp-btn" href="https://wa.me/918055113448" target="_blank">
-      Enquiries via WhatsApp
-    </a>
-
-    <p class="location">Mumbai • PAN India</p>
   </section>
 
-  <!-- TRUST SECTION -->
-  <section class="trust">
-    <div class="trust-card">
+  <!-- TRUST INDICATORS -->
+  <section class="features">
+    <div class="feature">
       <h3>Certified Authenticity</h3>
-      <p>Every gemstone comes with international certification</p>
+      <p>Every gemstone comes with international certification.</p>
     </div>
-
-    <div class="trust-card">
+    <div class="feature">
       <h3>Premium Quality</h3>
-      <p>Handpicked selection of the finest gemstones</p>
+      <p>Handpicked selection of the finest gemstones.</p>
     </div>
-
-    <div class="trust-card">
+    <div class="feature">
       <h3>Natural Stones</h3>
-      <p>100% natural, ethically sourced precious stones</p>
+      <p>100% natural, ethically sourced precious stones.</p>
     </div>
-
-    <div class="trust-card">
+    <div class="feature">
       <h3>Global Standards</h3>
-      <p>IGI & GIA aligned gemstone trading practices</p>
+      <p>IGI & GIA aligned gemstone trading practices.</p>
     </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <h3>Trusted Gemstone Trading Since Generations</h3>
+    <p>
+      FACETRA represents decades of expertise in gemstone trading,
+      combining traditional knowledge with modern certification standards.
+      Our commitment to authenticity, quality, and ethical sourcing
+      has made us a trusted name in the industry.
+    </p>
+
+    <div class="about-button">Launching Soon</div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 FACETRA. All rights reserved.</p>
+    <p>
+      Enquiries via
+      <a href="https://wa.me/918055113448" target="_blank">WhatsApp</a>
+      · Mumbai · PAN India
+    </p>
+    <p class="copyright">
+      © 2026 FACETRA. All rights reserved.
+    </p>
   </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    function toggleMenu() {
+      document.getElementById("mobileMenu").classList.toggle("open");
+    }
+  </script>
 
 </body>
 </html>
