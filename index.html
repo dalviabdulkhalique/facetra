@@ -2,87 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>FACETRA | Premium Gemstone Trading House</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO -->
-  <meta name="description" content="FACETRA is a premium gemstone trading house offering natural & certified gemstones. Diamonds, rubies, emeralds & sapphires. Launching soon." />
-  <meta name="keywords" content="FACETRA, gemstones, diamonds, certified gemstones, gemstone trading, Mumbai gems" />
+  <title>FACETRA | Premium Gemstone Trading House</title>
+  <meta name="description" content="FACETRA is a premium gemstone trading house dealing in natural, certified diamonds and precious stones. Coming soon." />
 
-  <link rel="stylesheet" href="style.css" />
+  <!-- FORCE CSS RELOAD -->
+  <link rel="stylesheet" href="style.css?v=3" />
+
 </head>
-
 <body>
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 <header class="header">
   <div class="logo-area">
-    <img src="logo.png" alt="FACETRA Logo" />
-    <span>FACETRA</span>
+    <img src="logo.png" alt="FACETRA Logo" class="logo">
+    <span class="brand-name">FACETRA</span>
   </div>
 
-  <nav class="nav desktop-nav">
-    <a href="#coming">Home</a>
+  <!-- Desktop Navigation -->
+  <nav class="nav-desktop">
+    <a href="#home">Home</a>
     <a href="#coming">Collection</a>
     <a href="#coming">Certification</a>
     <a href="#coming">Why FACETRA</a>
     <a href="#coming">About</a>
     <a href="#coming">Contact</a>
-    <a class="insta-btn" target="_blank"
-       href="https://www.instagram.com/facetra.in?igsh=MTdjY21hYWdvN3Nuag==">
-       Instagram
-    </a>
   </nav>
 
-  <!-- Mobile Menu Icon -->
+  <!-- Mobile Hamburger -->
   <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </header>
 
-<!-- MOBILE MENU -->
-<div id="mobileMenu" class="mobile-menu">
-  <a href="#coming">Home</a>
-  <a href="#coming">Collection</a>
-  <a href="#coming">Certification</a>
-  <a href="#coming">Why FACETRA</a>
-  <a href="#coming">About</a>
-  <a href="#coming">Contact</a>
-
-  <a class="mobile-insta-btn" target="_blank"
-     href="https://www.instagram.com/facetra.in?igsh=MTdjY21hYWdvN3Nuag==">
-     Follow on Instagram
-  </a>
+<!-- Mobile Navigation -->
+<div id="mobileMenu" class="mobile-nav">
+  <a href="#home" onclick="toggleMenu()">Home</a>
+  <a href="#coming" onclick="toggleMenu()">Collection</a>
+  <a href="#coming" onclick="toggleMenu()">Certification</a>
+  <a href="#coming" onclick="toggleMenu()">Why FACETRA</a>
+  <a href="#coming" onclick="toggleMenu()">About</a>
+  <a href="#coming" onclick="toggleMenu()">Contact</a>
 </div>
 
-<!-- HERO -->
-<section class="hero" id="coming">
-  <img class="hero-logo" src="logo.png" alt="FACETRA Logo" />
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+  <img src="logo.png" alt="FACETRA Emblem" class="hero-logo">
 
   <h1>FACETRA</h1>
   <h2>Premium Gemstone Trading House</h2>
 
   <div class="coming-box">COMING SOON</div>
 
-  <p class="desc">
-    Natural & certified precious and semi-precious gemstones.<br/>
+  <p class="tagline">
+    Natural & certified precious and semi-precious gemstones.<br>
     Ethically sourced • Expertly curated • Trade focused
   </p>
 
   <p class="contact">
-    Enquiries via WhatsApp<br/>
-    <strong>+91 80551 13448</strong><br/>
+    Enquiries via WhatsApp<br>
+    <a href="https://wa.me/918055113448" target="_blank">+91 80551 13448</a><br>
     Mumbai • PAN India
   </p>
 </section>
 
-<!-- FOOTER -->
+<!-- ================= COMING SOON SECTIONS ================= -->
+<section id="coming" class="locked">
+  <h3>Website Under Development</h3>
+  <p>
+    Our collections, certifications, and detailed portfolio will be available soon.
+    FACETRA is preparing a world-class gemstone trading experience.
+  </p>
+</section>
+
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
   © 2026 FACETRA. All rights reserved.
 </footer>
 
+<!-- ================= SCRIPT ================= -->
 <script>
-function toggleMenu() {
-  document.getElementById("mobileMenu").classList.toggle("open");
-}
+  function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("show");
+  }
 </script>
 
 </body>
