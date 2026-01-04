@@ -5,7 +5,7 @@
   <title>FACETRA | Premium Gemstone Trading House</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Google Fonts (Luxury + Clean) -->
+  <!-- Luxury Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
@@ -15,14 +15,15 @@
 <!-- ================= HEADER ================= -->
 <header class="header">
   <div class="logo">
-    <img src="logo.png" alt="FACETRA Logo">
+    <img src="logo.png" alt="FACETRA">
     <div>
       <h1>FACETRA</h1>
       <span>Gems • Diamonds • Stones</span>
     </div>
   </div>
 
-  <nav>
+  <!-- Desktop Nav -->
+  <nav class="nav-desktop">
     <a class="active">Home</a>
     <a>Collection</a>
     <a>Certification</a>
@@ -30,10 +31,27 @@
     <a>About</a>
     <a>Contact</a>
   </nav>
+
+  <!-- Hamburger -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </header>
 
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a onclick="toggleMenu()">Home</a>
+  <a onclick="toggleMenu()">Collection</a>
+  <a onclick="toggleMenu()">Certification</a>
+  <a onclick="toggleMenu()">Why Choose FACETRA</a>
+  <a onclick="toggleMenu()">About</a>
+  <a onclick="toggleMenu()">Contact</a>
+</div>
+
 <!-- ================= HERO ================= -->
-<section class="hero">
+<section class="hero fade-up">
   <img class="hero-logo" src="logo.png" alt="FACETRA">
 
   <h2>FACETRA</h2>
@@ -53,14 +71,11 @@
 </section>
 
 <!-- ================= FEATURES ================= -->
-<section class="features">
+<section class="features fade-up">
 
   <div class="feature-card">
     <div class="icon">
-      <!-- Shield -->
-      <svg viewBox="0 0 24 24">
-        <path d="M12 2l8 4v6c0 5-3.5 9.5-8 10-4.5-.5-8-5-8-10V6l8-4z"/>
-      </svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9.5-8 10-4.5-.5-8-5-8-10V6l8-4z"/></svg>
     </div>
     <h4>Certified Authenticity</h4>
     <p>Every gemstone comes with international certification</p>
@@ -68,11 +83,7 @@
 
   <div class="feature-card">
     <div class="icon">
-      <!-- Medal -->
-      <svg viewBox="0 0 24 24">
-        <circle cx="12" cy="8" r="5"/>
-        <path d="M8 13l-2 9 6-3 6 3-2-9"/>
-      </svg>
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="M8 13l-2 9 6-3 6 3-2-9"/></svg>
     </div>
     <h4>Premium Quality</h4>
     <p>Handpicked selection of the finest gemstones</p>
@@ -80,10 +91,7 @@
 
   <div class="feature-card">
     <div class="icon">
-      <!-- Diamond -->
-      <svg viewBox="0 0 24 24">
-        <path d="M3 9l5-6h8l5 6-9 12z"/>
-      </svg>
+      <svg viewBox="0 0 24 24"><path d="M3 9l5-6h8l5 6-9 12z"/></svg>
     </div>
     <h4>Natural Stones</h4>
     <p>100% natural, ethically sourced precious stones</p>
@@ -91,11 +99,7 @@
 
   <div class="feature-card">
     <div class="icon">
-      <!-- Globe -->
-      <svg viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="10"/>
-        <path d="M2 12h20M12 2c3 4 3 16 0 20M12 2c-3 4-3 16 0 20"/>
-      </svg>
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2c3 4 3 16 0 20M12 2c-3 4-3 16 0 20"/></svg>
     </div>
     <h4>Global Standards</h4>
     <p>IGI and GIA aligned gemstone trading practices</p>
@@ -104,22 +108,23 @@
 </section>
 
 <!-- ================= TRUST ================= -->
-<section class="trust">
+<section class="trust fade-up">
   <h2>Trusted Gemstone Trading Since Generations</h2>
   <p>
     FACETRA represents decades of expertise in gemstone trading,
     combining traditional knowledge with modern certification standards.
-    Our commitment to authenticity, quality, and ethical sourcing has
-    made us a trusted name in the industry.
+    Our commitment to authenticity, quality, and ethical sourcing has made us a trusted name in the industry.
   </p>
-
   <a class="learn">Learn More About FACETRA</a>
 </section>
 
-<!-- ================= FOOTER ================= -->
-<footer>
-  © 2026 FACETRA. All rights reserved.
-</footer>
+<footer>© 2026 FACETRA. All rights reserved.</footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById("mobileMenu").classList.toggle("open");
+}
+</script>
 
 </body>
 </html>
