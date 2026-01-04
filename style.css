@@ -1,12 +1,13 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Georgia", serif;
 }
 
 body {
-  background: radial-gradient(circle at top, #0c1512, #000);
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #0a1a14, #020806);
   color: #e6e6e6;
 }
 
@@ -16,125 +17,179 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 18px 40px;
-  border-bottom: 1px solid rgba(212,175,55,0.2);
+  border-bottom: 1px solid rgba(212,175,55,0.25);
 }
 
 .logo-area {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
   color: #d4af37;
-  font-weight: bold;
-  font-size: 20px;
 }
 
 .logo-area img {
-  height: 36px;
+  width: 42px;
 }
 
-nav a {
+/* NAV */
+.desktop-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.desktop-nav a {
+  font-size: 15px;
   color: #d4af37;
-  margin-left: 18px;
-  text-decoration: none;
-  font-size: 14px;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.desktop-nav a:hover {
+  opacity: 0.8;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: #d4af37;
+  cursor: pointer;
+}
+
+/* MOBILE MENU */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background: #020806;
+}
+
+.mobile-nav a {
+  padding: 14px;
+  text-align: center;
+  border-top: 1px solid rgba(212,175,55,0.2);
+  color: #d4af37;
+}
+
+.mobile-nav.open {
+  display: flex;
 }
 
 /* HERO */
 .hero {
   text-align: center;
-  padding: 90px 20px;
+  padding: 90px 20px 70px;
 }
 
-.hero-logo {
-  width: 160px;
-  margin-bottom: 25px;
+.hero img {
+  width: 200px;
+  margin-bottom: 28px;
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
   color: #d4af37;
-  letter-spacing: 3px;
 }
 
 .hero h2 {
   font-size: 18px;
-  margin-top: 10px;
-  color: #ccc;
+  margin: 10px 0 22px;
 }
 
-.coming-soon {
-  margin: 25px auto;
-  padding: 12px 26px;
+.coming-box {
   display: inline-block;
   border: 1px solid #d4af37;
-  color: #d4af37;
+  padding: 12px 36px;
   letter-spacing: 4px;
-  font-size: 14px;
+  color: #d4af37;
+  margin-bottom: 24px;
 }
 
-.tagline {
-  margin-top: 20px;
-  font-size: 15px;
-  line-height: 1.6;
-  color: #bbb;
+.hero-text {
+  max-width: 720px;
+  margin: auto;
+  color: #cccccc;
 }
 
-.whatsapp-btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 12px 28px;
-  border: 1px solid #d4af37;
-  color: #000;
-  background: #d4af37;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
-}
-
-.whatsapp-btn:hover {
-  background: #b9982f;
-}
-
-.location {
-  margin-top: 14px;
-  font-size: 13px;
-  color: #aaa;
-}
-
-/* TRUST */
-.trust {
+/* FEATURES */
+.features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  padding: 60px 40px;
+  gap: 30px;
+  padding: 80px 40px;
 }
 
-.trust-card {
+.feature {
   border: 1px solid rgba(212,175,55,0.25);
-  padding: 24px;
+  padding: 30px;
   text-align: center;
 }
 
-.trust-card h3 {
+.feature h3 {
   color: #d4af37;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-family: 'Playfair Display', serif;
 }
 
-.trust-card p {
-  font-size: 14px;
-  color: #bbb;
+/* ABOUT */
+.about {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.about h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #d4af37;
+  margin-bottom: 16px;
+}
+
+.about p {
+  max-width: 760px;
+  margin: auto;
+  color: #bdbdbd;
+}
+
+.about-button {
+  margin-top: 28px;
+  display: inline-block;
+  padding: 12px 28px;
+  border: 1px solid #d4af37;
+  color: #d4af37;
 }
 
 /* FOOTER */
 footer {
+  border-top: 1px solid rgba(212,175,55,0.25);
   text-align: center;
-  padding: 25px;
-  border-top: 1px solid rgba(212,175,55,0.2);
-  font-size: 13px;
-  color: #888;
+  padding: 28px 20px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #d4af37;
+}
+
+.copyright {
+  margin-top: 8px;
+  color: #999;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header {
+    padding: 16px 22px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
 }
