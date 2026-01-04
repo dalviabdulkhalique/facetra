@@ -5,179 +5,149 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* BODY */
 body {
-  font-family: 'Inter', sans-serif;
-  background: radial-gradient(circle at top, #0a1a14, #020806);
+  font-family: "Georgia", serif;
+  background: radial-gradient(circle at top, #0f1a14, #020403);
   color: #e6e6e6;
 }
 
 /* HEADER */
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 18px 40px;
-  border-bottom: 1px solid rgba(212,175,55,0.25);
+  justify-content: space-between;
+  padding: 16px 22px;
+  border-bottom: 1px solid #2a2415;
 }
 
 .logo-area {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-family: 'Playfair Display', serif;
+  gap: 10px;
+}
+
+.logo {
+  width: 36px;
+}
+
+.brand-name {
   font-size: 22px;
-  font-weight: 700;
   color: #d4af37;
+  font-weight: bold;
 }
 
-.logo-area img {
-  width: 42px;
-}
-
-/* NAV */
-.desktop-nav {
-  display: flex;
-  gap: 28px;
-}
-
-.desktop-nav a {
+.nav-desktop a {
+  margin-left: 18px;
+  color: #d4af37;
   font-size: 15px;
-  color: #d4af37;
-}
-
-.desktop-nav a:hover {
-  opacity: 0.8;
 }
 
 .menu-toggle {
   display: none;
-  font-size: 28px;
+  font-size: 26px;
   color: #d4af37;
   cursor: pointer;
 }
 
-/* MOBILE MENU */
+/* MOBILE NAV */
 .mobile-nav {
   display: none;
   flex-direction: column;
-  background: #020806;
+  background: #020403;
+  border-bottom: 1px solid #2a2415;
 }
 
 .mobile-nav a {
   padding: 14px;
   text-align: center;
-  border-top: 1px solid rgba(212,175,55,0.2);
+  border-top: 1px solid #2a2415;
   color: #d4af37;
 }
 
-.mobile-nav.open {
+.mobile-nav.show {
   display: flex;
 }
 
 /* HERO */
 .hero {
   text-align: center;
-  padding: 90px 20px 70px;
+  padding: 70px 20px;
 }
 
-.hero img {
-  width: 200px;
-  margin-bottom: 28px;
+.hero-logo {
+  width: 180px;
+  margin-bottom: 20px;
 }
 
 .hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 56px;
+  font-size: 48px;
   color: #d4af37;
+  letter-spacing: 2px;
 }
 
 .hero h2 {
-  font-size: 18px;
-  margin: 10px 0 22px;
-}
-
-.coming-box {
-  display: inline-block;
-  border: 1px solid #d4af37;
-  padding: 12px 36px;
-  letter-spacing: 4px;
-  color: #d4af37;
-  margin-bottom: 24px;
-}
-
-.hero-text {
-  max-width: 720px;
-  margin: auto;
+  font-size: 20px;
+  margin-top: 10px;
   color: #cccccc;
 }
 
-/* FEATURES */
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-  padding: 80px 40px;
-}
-
-.feature {
-  border: 1px solid rgba(212,175,55,0.25);
-  padding: 30px;
-  text-align: center;
-}
-
-.feature h3 {
-  color: #d4af37;
-  margin-bottom: 10px;
-  font-family: 'Playfair Display', serif;
-}
-
-/* ABOUT */
-.about {
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.about h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 36px;
-  color: #d4af37;
-  margin-bottom: 16px;
-}
-
-.about p {
-  max-width: 760px;
-  margin: auto;
-  color: #bdbdbd;
-}
-
-.about-button {
-  margin-top: 28px;
+.coming-box {
+  margin: 25px auto;
   display: inline-block;
   padding: 12px 28px;
   border: 1px solid #d4af37;
   color: #d4af37;
+  letter-spacing: 3px;
+}
+
+.tagline {
+  max-width: 620px;
+  margin: 20px auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.contact {
+  margin-top: 18px;
+  font-size: 15px;
+}
+
+.contact a {
+  color: #d4af37;
+  font-weight: bold;
+}
+
+/* LOCKED SECTION */
+.locked {
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 1px solid #2a2415;
+}
+
+.locked h3 {
+  color: #d4af37;
+  font-size: 26px;
+  margin-bottom: 10px;
 }
 
 /* FOOTER */
-footer {
-  border-top: 1px solid rgba(212,175,55,0.25);
+.footer {
+  padding: 20px;
   text-align: center;
-  padding: 28px 20px;
-  font-size: 14px;
-}
-
-footer a {
-  color: #d4af37;
-}
-
-.copyright {
-  margin-top: 8px;
-  color: #999;
+  font-size: 13px;
+  border-top: 1px solid #2a2415;
+  color: #777;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .desktop-nav {
+  .nav-desktop {
     display: none;
   }
 
@@ -185,11 +155,11 @@ footer a {
     display: block;
   }
 
-  .header {
-    padding: 16px 22px;
+  .hero h1 {
+    font-size: 36px;
   }
 
-  .hero h1 {
-    font-size: 40px;
+  .hero-logo {
+    width: 150px;
   }
 }
