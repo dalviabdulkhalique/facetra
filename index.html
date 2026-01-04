@@ -2,88 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>FACETRA | Premium Gemstone Trading House</title>
-  <meta name="description" content="FACETRA is a premium gemstone trading house dealing in natural, certified diamonds and precious stones. Coming soon." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FACETRA – Natural & Certified Gemstones. Launching Soon." />
 
-  <!-- FORCE CSS RELOAD -->
-  <link rel="stylesheet" href="style.css?v=3" />
-
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- HEADER -->
 <header class="header">
-  <div class="logo-area">
-    <img src="logo.png" alt="FACETRA Logo" class="logo">
-    <span class="brand-name">FACETRA</span>
+  <div class="logo">
+    <img src="logo.png" alt="FACETRA Logo">
+    <span>FACETRA</span>
   </div>
 
-  <!-- Desktop Navigation -->
-  <nav class="nav-desktop">
-    <a href="#home">Home</a>
-    <a href="#coming">Collection</a>
-    <a href="#coming">Certification</a>
-    <a href="#coming">Why FACETRA</a>
-    <a href="#coming">About</a>
-    <a href="#coming">Contact</a>
+  <nav class="nav">
+    <a href="#">Home</a>
+    <a href="#">Collection</a>
+    <a href="#">Certification</a>
+    <a href="#">Why FACETRA</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
   </nav>
 
-  <!-- Mobile Hamburger -->
-  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
 </header>
 
-<!-- Mobile Navigation -->
-<div id="mobileMenu" class="mobile-nav">
-  <a href="#home" onclick="toggleMenu()">Home</a>
-  <a href="#coming" onclick="toggleMenu()">Collection</a>
-  <a href="#coming" onclick="toggleMenu()">Certification</a>
-  <a href="#coming" onclick="toggleMenu()">Why FACETRA</a>
-  <a href="#coming" onclick="toggleMenu()">About</a>
-  <a href="#coming" onclick="toggleMenu()">Contact</a>
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#">Home</a>
+  <a href="#">Collection</a>
+  <a href="#">Certification</a>
+  <a href="#">Why FACETRA</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
 </div>
 
-<!-- ================= HERO ================= -->
-<section id="home" class="hero">
-  <img src="logo.png" alt="FACETRA Emblem" class="hero-logo">
+<!-- HERO -->
+<section class="hero">
+  <img src="logo.png" class="hero-logo" alt="FACETRA Logo">
 
   <h1>FACETRA</h1>
   <h2>Premium Gemstone Trading House</h2>
 
-  <div class="coming-box">COMING SOON</div>
+  <div class="coming">COMING SOON</div>
 
   <p class="tagline">
     Natural & certified precious and semi-precious gemstones.<br>
     Ethically sourced • Expertly curated • Trade focused
   </p>
 
-  <p class="contact">
-    Enquiries via WhatsApp<br>
-    <a href="https://wa.me/918055113448" target="_blank">+91 80551 13448</a><br>
-    Mumbai • PAN India
+  <p class="enquiry">
+    Enquiries via WhatsApp
   </p>
 </section>
 
-<!-- ================= COMING SOON SECTIONS ================= -->
-<section id="coming" class="locked">
-  <h3>Website Under Development</h3>
+<!-- TRUST BLOCKS -->
+<section class="features">
+  <div class="feature">
+    <h3>Certified Authenticity</h3>
+    <p>Every gemstone comes with international certification</p>
+  </div>
+
+  <div class="feature">
+    <h3>Premium Quality</h3>
+    <p>Handpicked selection of the finest gemstones</p>
+  </div>
+
+  <div class="feature">
+    <h3>Natural Stones</h3>
+    <p>100% natural, ethically sourced precious stones</p>
+  </div>
+
+  <div class="feature">
+    <h3>Global Standards</h3>
+    <p>IGI & GIA aligned gemstone trading standards</p>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story">
+  <h2>Trusted Gemstone Trading Since Generations</h2>
   <p>
-    Our collections, certifications, and detailed portfolio will be available soon.
-    FACETRA is preparing a world-class gemstone trading experience.
+    FACETRA represents decades of expertise in gemstone trading,
+    combining traditional knowledge with modern certification standards.
+    Our commitment to authenticity, quality, and ethical sourcing
+    has made us a trusted name in the industry.
   </p>
 </section>
 
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
+<!-- FOOTER -->
+<footer>
   © 2026 FACETRA. All rights reserved.
 </footer>
 
-<!-- ================= SCRIPT ================= -->
 <script>
-  function toggleMenu() {
-    document.getElementById("mobileMenu").classList.toggle("show");
-  }
+function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("show");
+}
 </script>
 
 </body>
