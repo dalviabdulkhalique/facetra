@@ -1112,3 +1112,99 @@ body.page{
   max-width:820px;
   margin:24px auto 0;
 }
+/* ===============================
+   CONTACT PAGE
+================================ */
+
+.contact-section{
+  padding:120px 40px;
+  background:linear-gradient(to bottom,#050806,#0b120f);
+}
+
+.contact-grid{
+  max-width:1200px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:70px;
+  align-items:flex-start;
+}
+
+.contact-info h2{
+  font-family:Cinzel,serif;
+  color:var(--gold2);
+  font-size:34px;
+  margin-bottom:18px;
+}
+
+.contact-info p{
+  font-size:15px;
+  line-height:1.9;
+  margin-bottom:26px;
+}
+
+.contact-item{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:18px;
+  font-size:15px;
+  color:#e6dfc0;
+}
+
+.contact-hours{
+  margin-top:28px;
+  font-size:14px;
+  line-height:1.7;
+  color:#d8d2b0;
+}
+
+.contact-cta{
+  background:linear-gradient(180deg,#0c1310,#070b09);
+  border:1px solid rgba(201,162,77,.35);
+  padding:50px 40px;
+}
+
+.contact-cta h3{
+  font-family:Cinzel,serif;
+  color:var(--gold2);
+  font-size:26px;
+  margin-bottom:14px;
+}
+
+.contact-cta p{
+  font-size:15px;
+  line-height:1.9;
+  margin-bottom:26px;
+}
+
+.contact-note{
+  margin-top:22px;
+  font-size:13px;
+  opacity:.75;
+}
+
+/* ICON STYLE */
+
+.icon{
+  width:20px;
+  height:20px;
+  stroke:var(--gold2);
+  fill:none;
+  stroke-width:1.6;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .contact-grid{
+    grid-template-columns:1fr;
+    gap:50px;
+  }
+
+  .contact-section{
+    padding:90px 24px;
+  }
+
+}
