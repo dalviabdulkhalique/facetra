@@ -131,6 +131,12 @@ body{
 /* =====================================================
    HERO
    ===================================================== */
+.hero-logo{
+  width: 320px;
+  max-width: 85%;
+  margin: 0 auto 26px;
+  filter: drop-shadow(0 0 18px rgba(201,162,77,.25));
+}
 
 .hero-section{
   min-height:90vh;
