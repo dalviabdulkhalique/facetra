@@ -1,60 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>FACETRA | Premium Gemstone Trading House</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FACETRA is a premium gemstone trading house in Mumbai offering ethically sourced, internationally certified natural gemstones curated for collectors and investors.">
+  <link rel="canonical" href="https://facetra.in/">
+  <link rel="stylesheet" href="style.css">
 
-<!-- ================= BASIC ================= -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FAVICONS -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-<title>FACETRA | Premium Gemstone Trading House</title>
-<meta name="description" content="FACETRA is a premium gemstone trading house in Mumbai specializing in ethically sourced, internationally certified natural diamonds and rare gemstones curated for collectors and investors.">
-
-<link rel="canonical" href="https://facetra.in/">
-
-<!-- ================= FAVICONS ================= -->
-<link rel="icon" href="/favicon-32x32.png" sizes="32x32">
-<link rel="icon" href="/favicon-192x192.png" sizes="192x192">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-<!-- ================= FONTS ================= -->
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-<!-- ================= CSS ================= -->
-<link rel="stylesheet" href="style.css">
-
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- =================================================
-HEADER
-================================================== -->
-<header class="header">
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="FACETRA Logo">
+      <div class="brand-text">
+        <span class="brand-name">FACETRA</span>
+        <span class="brand-tag">Gems • Diamonds • Stones</span>
+      </div>
+    </a>
 
-  <div class="logo">
-    <img src="logo.png" alt="FACETRA Logo">
-    <div>
-      <h1>FACETRA</h1>
-      <span>Gems • Diamonds • Stones</span>
+    <nav class="main-nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="collection.html">Collection</a>
+      <a href="certification.html">Certification</a>
+      <a href="why-facetra.html">Why FACETRA</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
     </div>
   </div>
-
-  <nav class="nav">
-    <a href="index.html" class="active">Home</a>
-    <a href="collection.html">Collection</a>
-    <a href="certification.html">Certification</a>
-    <a href="why-facetra.html">Why FACETRA</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <div class="hamburger" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </div>
-
 </header>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileMenu">
   <a href="index.html">Home</a>
   <a href="collection.html">Collection</a>
   <a href="certification.html">Certification</a>
@@ -63,117 +55,85 @@ HEADER
   <a href="contact.html">Contact</a>
 </div>
 
-<!-- =================================================
-HERO
-================================================== -->
+<!-- ================= HERO ================= -->
 <section class="hero">
+  <div class="hero-content">
+    <img src="logo.png" class="hero-logo" alt="FACETRA Logo">
 
-  <img class="hero-logo" src="logo.png" alt="FACETRA Logo">
+    <h1>FACETRA</h1>
+    <h2>Premium Gemstone Trading House</h2>
 
-  <h2>FACETRA</h2>
-  <h3>Premium Gemstone Trading House</h3>
+    <p>
+      Based in Mumbai, FACETRA specializes in ethically sourced, internationally certified natural
+      diamonds, rubies, sapphires, emeralds and rare collector-grade gemstones curated for investors
+      and connoisseurs seeking long-term value and authenticity.
+    </p>
 
-  <p class="hero-text">
-    Based in Mumbai, FACETRA specializes in ethically sourced, internationally certified natural
-    diamonds, rubies, sapphires, emeralds and rare collector-grade gemstones curated for investors
-    and connoisseurs seeking long-term value and authenticity.
-  </p>
-
-  <div class="hero-buttons">
-    <a class="btn-outline">Coming Soon</a>
-    <a class="btn-gold" href="https://wa.me/918055113448" target="_blank">Enquire via WhatsApp</a>
+    <div class="hero-actions">
+      <span class="btn-outline">Coming Soon</span>
+      <a class="btn-gold" href="https://wa.me/918055113448" target="_blank">Enquire via WhatsApp</a>
+    </div>
   </div>
-
 </section>
 
-<!-- =================================================
-GLOBAL REACH
-================================================== -->
-<section class="globe-section">
-
-  <div class="globe-icon">
-    <!-- GLOBE SVG -->
-    <svg viewBox="0 0 24 24">
-      <circle cx="12" cy="12" r="10"/>
-      <path d="M2 12h20"/>
-      <path d="M12 2c3 4 3 16 0 20"/>
-      <path d="M12 2c-3 4-3 16 0 20"/>
-    </svg>
+<!-- ================= FEATURE GRID ================= -->
+<section class="feature-grid">
+  <div class="feature-card">
+    <div class="icon-wrap">
+      <svg viewBox="0 0 24 24"><path d="M12 2l9 5-9 15L3 7z"/></svg>
+    </div>
+    <h3>Certified Authenticity</h3>
+    <p>All gemstones are verified by globally recognized laboratories ensuring complete transparency.</p>
   </div>
 
-  <h2>Global Gemstone Network</h2>
-  <p>
-    FACETRA works with trusted international suppliers and certification laboratories to ensure
-    transparent provenance and globally accepted grading standards.
-  </p>
+  <div class="feature-card">
+    <div class="icon-wrap">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+    </div>
+    <h3>Investment Grade Quality</h3>
+    <p>Hand-selected stones chosen for rarity, clarity and appreciation potential.</p>
+  </div>
 
+  <div class="feature-card">
+    <div class="icon-wrap">
+      <svg viewBox="0 0 24 24"><path d="M2 12h20"/></svg>
+    </div>
+    <h3>Ethical Sourcing</h3>
+    <p>Responsible procurement with documented provenance and ethical mining practices.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="icon-wrap">
+      <svg viewBox="0 0 24 24"><path d="M12 2v20"/></svg>
+    </div>
+    <h3>Global Trade Standards</h3>
+    <p>Aligned with IGI and GIA evaluation standards across international markets.</p>
+  </div>
 </section>
 
-<!-- =================================================
-SPECIALIZATION
-================================================== -->
-<section class="specialize">
-
-  <div class="spec-card">
-    <svg viewBox="0 0 24 24"><path d="M3 9l5-6h8l5 6-9 12z"/></svg>
-    <h4>Certified Diamonds</h4>
-    <p>White and fancy diamonds curated for luxury and investment portfolios.</p>
-  </div>
-
-  <div class="spec-card">
-    <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="M8 13l-2 9 6-3 6 3-2-9"/></svg>
-    <h4>Fine Rubies</h4>
-    <p>Corundum sourced from prestigious global mining regions.</p>
-  </div>
-
-  <div class="spec-card">
-    <svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 9.5-8 10-4.5-.5-8-5-8-10V6l8-4z"/></svg>
-    <h4>Emerald Selection</h4>
-    <p>Colombian and Zambian emeralds with certification.</p>
-  </div>
-
-  <div class="spec-card">
-    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
-    <h4>Rare Stones</h4>
-    <p>Spinel, alexandrite and untreated collector-grade gemstones.</p>
-  </div>
-
-</section>
-
-<!-- =================================================
-TRUST
-================================================== -->
-<section class="trust">
-
+<!-- ================= TRUST ================= -->
+<section class="trust-section">
   <h2>Trusted by Collectors & Investors</h2>
-
   <p>
-    FACETRA works with private collectors, jewelers and international buyers who value
-    precision, confidentiality and verified authenticity in every transaction.
+    FACETRA works with private collectors, jewelers, investment advisors and international buyers who
+    value discretion, precision and verified authenticity in every transaction.
   </p>
-
-  <a class="btn-gold" href="about.html">Learn More About FACETRA</a>
-
+  <a href="about.html" class="btn-gold">Learn More About FACETRA</a>
 </section>
 
-<!-- =================================================
-FOOTER
-================================================== -->
-<footer class="footer">
-
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
   <div class="footer-grid">
 
-    <!-- BRAND -->
     <div class="footer-brand">
       <img src="logo.png" alt="FACETRA Logo">
       <h3>FACETRA</h3>
       <p>
-        Premium gemstone trading house delivering certified natural gemstones curated
-        for collectors, jewelers and long-term investors.
+        Premium gemstone trading house delivering certified natural gemstones curated for collectors,
+        jewelers and long-term investors.
       </p>
     </div>
 
-    <!-- LINKS -->
     <div class="footer-links">
       <h4>Quick Links</h4>
       <a href="collection.html">Collection</a>
@@ -183,24 +143,11 @@ FOOTER
       <a href="contact.html">Contact</a>
     </div>
 
-    <!-- CONTACT -->
     <div class="footer-contact">
       <h4>Contact Information</h4>
-
-      <div class="contact-row">
-        <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/></svg>
-        <span>info@facetra.in</span>
-      </div>
-
-      <div class="contact-row">
-        <svg viewBox="0 0 24 24"><path d="M2 2l20 20"/></svg>
-        <span>+91 80551 13448</span>
-      </div>
-
-      <div class="contact-row">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"/><path d="M12 2c4 5 6 9 0 20"/></svg>
-        <span>Mumbai, Maharashtra, India</span>
-      </div>
+      <p>info@facetra.in</p>
+      <p>+91 80551 13448</p>
+      <p>Mumbai, Maharashtra, India</p>
     </div>
 
   </div>
@@ -208,7 +155,6 @@ FOOTER
   <div class="footer-bottom">
     © 2026 FACETRA. All rights reserved.
   </div>
-
 </footer>
 
 <script>
