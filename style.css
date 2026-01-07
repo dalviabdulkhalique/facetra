@@ -409,3 +409,156 @@ body{
     grid-template-columns:1fr;
   }
 }
+/* =====================================================
+   PART 3 — PROCESS / INVESTOR TRUST / CTA
+   ===================================================== */
+
+/* ================= PROCESS ================= */
+
+.process-section{
+  padding:120px 40px;
+  background:linear-gradient(to bottom,#070b09,#050806);
+}
+
+.process-line{
+  max-width:1200px;
+  margin:80px auto 0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:40px;
+}
+
+.process-step{
+  position:relative;
+  padding:40px 30px;
+  background:var(--card);
+  border:1px solid rgba(201,162,77,.25);
+  transition:.35s;
+}
+
+.process-step:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 24px rgba(201,162,77,.3);
+}
+
+.step-no{
+  position:absolute;
+  top:18px;
+  right:20px;
+  font-family:Cinzel,serif;
+  font-size:28px;
+  color:rgba(201,162,77,.35);
+}
+
+.process-step h4{
+  font-family:Cinzel,serif;
+  color:var(--gold2);
+  margin-bottom:10px;
+}
+
+.process-step p{
+  font-size:14px;
+  line-height:1.7;
+}
+
+/* ================= INVESTOR ================= */
+
+.investor-section{
+  padding:130px 40px;
+}
+
+.investor-grid{
+  max-width:1200px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:60px;
+  align-items:center;
+}
+
+.investor-text h2{
+  font-family:Cinzel,serif;
+  font-size:36px;
+  color:var(--gold2);
+  margin-bottom:18px;
+}
+
+.investor-text p{
+  font-size:15px;
+  line-height:1.9;
+  margin-bottom:16px;
+}
+
+.investor-stats{
+  display:grid;
+  gap:26px;
+}
+
+.stat-box{
+  background:linear-gradient(135deg,#0c1310,#060a08);
+  border:1px solid rgba(201,162,77,.35);
+  padding:34px 28px;
+  text-align:center;
+}
+
+.stat-box h3{
+  font-family:Cinzel,serif;
+  color:var(--gold1);
+  font-size:32px;
+  margin-bottom:6px;
+}
+
+.stat-box span{
+  font-size:13px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color:#d6d0b0;
+}
+
+/* ================= CTA ================= */
+
+.cta-section{
+  padding:140px 40px;
+  background:
+    radial-gradient(circle at center,rgba(201,162,77,.12),transparent 60%),
+    linear-gradient(to bottom,#050806,#070b09);
+}
+
+.cta-box{
+  max-width:900px;
+  margin:0 auto;
+  text-align:center;
+  border:1px solid rgba(201,162,77,.35);
+  padding:70px 50px;
+  background:linear-gradient(180deg,#0c1310,#070b09);
+}
+
+.cta-box h2{
+  font-family:Cinzel,serif;
+  color:var(--gold2);
+  font-size:34px;
+  margin-bottom:14px;
+}
+
+.cta-box p{
+  font-size:15px;
+  line-height:1.8;
+  margin-bottom:30px;
+}
+
+.cta-actions{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .investor-grid{
+    grid-template-columns:1fr;
+  }
+  .cta-box{
+    padding:50px 26px;
+  }
+}
