@@ -575,7 +575,7 @@ body{
 
 .lux-footer{
   border-top:1px solid rgba(201,162,77,.35);
-  padding:90px 40px 30px;
+  padding:60px 40px 24px;   /* reduced height */
   background:linear-gradient(to bottom,#060a08,#020403);
 }
 
@@ -584,7 +584,7 @@ body{
   margin:auto;
   display:grid;
   grid-template-columns:1.2fr 1fr 1fr;
-  gap:80px;
+  gap:50px;   /* tighter */
 }
 
 /* BRAND */
@@ -659,10 +659,11 @@ body{
 
 .footer-bottom{
   text-align:center;
-  font-size:13px;
+  font-size:12px;
   opacity:.55;
-  margin-top:60px;
+  margin-top:36px;
 }
+
 
 /* MOBILE */
 
