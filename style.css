@@ -563,54 +563,57 @@ body{
   }
 }
 /* =====================================================
-   PART 4 — PREMIUM FOOTER
+  /* =====================================================
+   LUXURY FOOTER
    ===================================================== */
 
-.site-footer{
-  background:linear-gradient(to bottom,#050806,#020403);
-  border-top:1px solid rgba(201,162,77,.25);
-  padding:90px 40px 0;
+.lux-footer{
+  border-top:1px solid rgba(201,162,77,.35);
+  padding:90px 40px 30px;
+  background:linear-gradient(to bottom,#060a08,#020403);
 }
 
-.footer-main{
-  max-width:1300px;
-  margin:0 auto;
+.footer-inner{
+  max-width:1200px;
+  margin:auto;
   display:grid;
-  grid-template-columns:1.3fr .8fr .9fr;
-  gap:70px;
-  padding-bottom:70px;
+  grid-template-columns:1.2fr 1fr 1fr;
+  gap:80px;
 }
 
 /* BRAND */
-.footer-brand p{
-  font-size:14px;
-  line-height:1.8;
-  color:#cfd4d1;
-}
 
-.footer-logo-row{
+.footer-logo{
   display:flex;
   align-items:center;
-  gap:12px;
+  gap:14px;
   margin-bottom:14px;
 }
 
-.footer-logo-row img{
-  width:44px;
+.footer-logo img{
+  width:48px;
 }
 
-.footer-brand-name{
+.footer-logo span{
   font-family:Cinzel,serif;
-  color:var(--gold2);
-  letter-spacing:1.4px;
-  font-size:18px;
+  font-size:20px;
+  color:var(--gold);
+  letter-spacing:1px;
+}
+
+.footer-brand p{
+  font-size:14px;
+  line-height:1.9;
+  opacity:.85;
 }
 
 /* LINKS */
+
 .footer-links h4,
 .footer-contact h4{
   font-family:Cinzel,serif;
-  color:var(--gold2);
+  color:var(--gold);
+  font-size:18px;
   margin-bottom:18px;
 }
 
@@ -618,49 +621,58 @@ body{
   display:block;
   margin-bottom:10px;
   font-size:14px;
-  color:#cfd4d1;
+  opacity:.85;
   transition:.3s;
 }
 
 .footer-links a:hover{
-  color:var(--gold2);
-  transform:translateX(4px);
+  color:var(--gold);
+  transform:translateX(6px);
 }
 
 /* CONTACT */
-.footer-contact .contact-item{
+
+.contact-item{
   display:flex;
   align-items:center;
-  gap:10px;
+  gap:12px;
   margin-bottom:14px;
   font-size:14px;
-  color:#cfd4d1;
+  opacity:.9;
 }
 
-.footer-contact svg{
+.contact-item svg{
   width:18px;
   height:18px;
-  stroke:var(--gold2);
+  stroke:var(--gold);
   fill:none;
-  stroke-width:1.5;
+  stroke-width:1.6;
 }
 
-/* LEGAL */
+/* BOTTOM */
+
 .footer-bottom{
-  border-top:1px solid rgba(201,162,77,.15);
   text-align:center;
-  padding:18px;
   font-size:13px;
-  color:#aaa;
+  opacity:.55;
+  margin-top:60px;
 }
 
-/* RESPONSIVE */
+/* MOBILE */
+
 @media(max-width:900px){
-  .footer-main{
+
+  .footer-inner{
     grid-template-columns:1fr;
-    gap:40px;
+    gap:50px;
   }
+
+  .lux-footer{
+    padding:70px 24px 26px;
+  }
+
 }
+
 /* =====================================================
    PART 5 — PAGE TRANSITIONS
    ===================================================== */
