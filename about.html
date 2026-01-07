@@ -1,146 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- ================= BASIC SEO ================= -->
   <meta charset="UTF-8">
-  <title>About FACETRA | Premium Gemstone Trading House</title>
-  <meta name="description" content="Learn about FACETRA, a premium gemstone trading house specializing in ethically sourced, internationally certified natural gemstones.">
+  <title>About FACETRA | Premium Gemstone Trading House in India</title>
+  <meta name="description" content="Learn about FACETRA, a premium gemstone trading house specializing in ethically sourced and internationally certified natural gemstones for collectors and investors.">
+  <meta name="keywords" content="About FACETRA, gemstone trading house India, certified gemstones company, ethical gemstone sourcing, luxury gemstone dealer">
+  <meta name="author" content="FACETRA">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ================= CANONICAL ================= -->
   <link rel="canonical" href="https://facetra.in/about.html">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="About FACETRA">
-  <meta property="og:description" content="FACETRA is a premium gemstone trading house built on authenticity, certification, and trust.">
+  <!-- ================= FAVICONS ================= -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#000000">
+
+  <!-- ================= OPEN GRAPH ================= -->
+  <meta property="og:title" content="About FACETRA | Premium Gemstone Trading House">
+  <meta property="og:description" content="FACETRA is a professional gemstone trading house offering certified natural gemstones sourced ethically for collectors and investors.">
   <meta property="og:image" content="https://facetra.in/og-image.jpg">
   <meta property="og:url" content="https://facetra.in/about.html">
+  <meta property="og:type" content="website">
 
+  <!-- ================= FONTS ================= -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- ================= CSS ================= -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- ================= ORGANIZATION SCHEMA ================= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://facetra.in/#organization",
+    "name": "FACETRA",
+    "url": "https://facetra.in/",
+    "logo": "https://facetra.in/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/facetra.in"
+    ]
+  }
+  </script>
+
+  <!-- ================= ABOUT PAGE SCHEMA ================= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": "https://facetra.in/about.html#aboutpage",
+    "url": "https://facetra.in/about.html",
+    "name": "About FACETRA",
+    "about": {
+      "@id": "https://facetra.in/#organization"
+    }
+  }
+  </script>
+
 </head>
 
 <body class="page">
 
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="header-inner">
 
-<header class="header">
-  <div class="logo">
-    <img src="logo.png" alt="FACETRA Premium Gemstone Trading House Logo">
-    <div>
-      <h1>FACETRA</h1>
-      <span>Gems • Diamonds • Stones</span>
+    <div class="brand">
+      <img src="logo.png" alt="FACETRA Logo" class="brand-logo">
+      <div class="brand-text">
+        <span class="brand-name">FACETRA</span>
+        <span class="brand-tag">Gems • Diamonds • Stones</span>
+      </div>
     </div>
-  </div>
 
-  <nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="about.html" class="active">About FACETRA</a>
-    <a href="why-facetra.html">Why FACETRA</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="collection.html">Collection</a>
+      <a href="certification.html">Certification</a>
+      <a href="why-facetra.html">Why FACETRA</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-  <div class="hamburger" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+
   </div>
 </header>
 
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html" onclick="toggleMenu()">Home</a>
-  <a href="about.html" onclick="toggleMenu()">About FACETRA</a>
-  <a href="why-facetra.html" onclick="toggleMenu()">Why FACETRA</a>
-  <a href="contact.html" onclick="toggleMenu()">Contact</a>
+<!-- ================= MOBILE NAV ================= -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="collection.html">Collection</a>
+  <a href="certification.html">Certification</a>
+  <a href="why-facetra.html">Why FACETRA</a>
+  <a href="about.html" class="active">About</a>
+  <a href="contact.html">Contact</a>
 </div>
 
-<main class="authority-wrapper">
-
-  <!-- HERO -->
-  <section class="authority-hero">
+<!-- ================= ABOUT HERO ================= -->
+<section class="about-hero">
+  <div class="about-hero-inner fade-up">
     <h1>About FACETRA</h1>
     <p>
-      FACETRA is a premium gemstone trading house based in Mumbai, India,
-      specializing in ethically sourced, internationally certified natural gemstones.
-      We serve collectors, investors, and connoisseurs seeking authenticity,
-      rarity, and long-term value.
+      FACETRA is a premium gemstone trading house serving collectors, jewelers and
+      investors seeking ethically sourced and internationally certified natural gemstones.
     </p>
-  </section>
+  </div>
+</section>
 
-  <!-- PHILOSOPHY -->
-  <section class="authority-section">
-    <h2>Our Philosophy</h2>
-    <p>
-      At FACETRA, gemstones are regarded as timeless natural assets shaped by
-      geological forces, rarity, and precision craftsmanship.
-      Every stone undergoes meticulous evaluation for authenticity,
-      certification alignment, provenance, and long-term appreciation potential.
-    </p>
-  </section>
+<!-- ================= PHILOSOPHY ================= -->
+<section class="about-section">
+  <div class="about-grid">
 
-  <!-- SPECIALIZATION -->
-  <section class="authority-section">
-    <h2>What We Specialize In</h2>
-    <ul class="authority-list">
-      <li>Natural Diamonds with International Certification</li>
-      <li>Fine Rubies, Sapphires, and Emeralds</li>
-      <li>Investment-grade Precious Gemstones</li>
-      <li>Carefully Selected Semi-Precious Stones</li>
-      <li>Collector and Portfolio-grade Natural Assets</li>
-    </ul>
-  </section>
-
-  <!-- ETHICS -->
-  <section class="authority-section">
-    <h2>Ethics & Certification</h2>
-    <p>
-      Transparency and integrity are the foundation of FACETRA.
-      Every gemstone offered is natural, responsibly sourced,
-      and aligned with globally recognized certification standards.
-      Our practices reflect strict compliance with ethical trade principles.
-    </p>
-  </section>
-
-  <!-- LEADERSHIP -->
-  <section class="authority-section">
-    <h2>Leadership</h2>
-    <p>
-      FACETRA is led by <strong>Abdul Khalique</strong>,
-      Founder & Gemstone Consultant, combining generational industry knowledge
-      with modern global gemstone trade expertise.
-    </p>
-
-    <div class="authority-highlight">
-      <h3>Our Commitment</h3>
+    <div class="about-text fade-up">
+      <h2>Our Philosophy</h2>
       <p>
-        FACETRA exists to protect trust in gemstone trading.
-        We do not chase volume — we curate value.
-        Every gemstone represents legacy, discipline, and enduring worth.
+        At FACETRA, gemstones are treated as rare natural assets shaped by geology,
+        scarcity and global market demand — not mass retail products.
+      </p>
+      <p>
+        Our approach emphasizes authenticity, traceability and long-term value preservation.
       </p>
     </div>
-  </section>
 
-</main>
+    <div class="about-text fade-up">
+      <h2>Professional Market Position</h2>
+      <p>
+        FACETRA operates within international gemstone trading ecosystems connecting
+        mining sources, laboratories, wholesalers and institutional buyers.
+      </p>
+      <p>
+        We prioritize curated acquisition and verified documentation rather than
+        volume-driven retail.
+      </p>
+    </div>
 
-<footer class="authority-footer">
-  © 2026 FACETRA. All rights reserved.
+  </div>
+</section>
+
+<!-- ================= TRUST ================= -->
+<section class="about-trust">
+
+  <div class="section-header fade-up">
+    <h2>Trust & Transparency</h2>
+    <p>
+      Professional gemstone trading requires compliance, certification and clear disclosure.
+    </p>
+  </div>
+
+  <div class="trust-grid">
+
+    <div class="trust-card fade-up">
+      <h4>Independent Certification</h4>
+      <p>Verification by globally recognized gemological laboratories.</p>
+    </div>
+
+    <div class="trust-card fade-up">
+      <h4>Ethical Sourcing</h4>
+      <p>Conflict-free supply chains with legal trade documentation.</p>
+    </div>
+
+    <div class="trust-card fade-up">
+      <h4>Market Expertise</h4>
+      <p>Valuation aligned with international gemstone benchmarks.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="about-cta">
+  <div class="cta-box fade-up">
+    <h2>Partner with FACETRA</h2>
+    <p>
+      Whether sourcing for fine jewelry or building gemstone portfolios,
+      FACETRA provides professional consultation and verified assets.
+    </p>
+
+    <div class="cta-actions">
+      <a href="contact.html" class="btn-outline-gold">Contact FACETRA</a>
+      <a href="https://wa.me/918055113448" class="btn-gold-glow" target="_blank">
+        WhatsApp Consultation
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+
+  <div class="footer-main">
+
+    <div class="footer-brand fade-up">
+      <div class="footer-logo-row">
+        <img src="logo.png" alt="FACETRA Logo">
+        <span class="footer-brand-name">FACETRA</span>
+      </div>
+      <p>
+        Premium gemstone trading house specializing in certified natural gemstones
+        for collectors, jewelers and long-term investors.
+      </p>
+    </div>
+
+    <div class="footer-links fade-up">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="collection.html">Collection</a>
+      <a href="certification.html">Certification</a>
+      <a href="why-facetra.html">Why FACETRA</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-contact fade-up">
+      <h4>Contact</h4>
+
+      <div class="contact-item">
+        <span>+91 80551 13448</span>
+      </div>
+
+      <div class="contact-item">
+        <span>info@facetra.in</span>
+      </div>
+
+      <div class="contact-item">
+        <span>www.facetra.in</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 FACETRA. All rights reserved.
+  </div>
+
 </footer>
 
+<!-- ================= JS ================= -->
 <script>
-function toggleMenu(){
-  document.getElementById("mobileMenu").classList.toggle("open");
-}
-</script>
-<script>
-/* PAGE FADE TRANSITIONS */
-document.querySelectorAll("a").forEach(link => {
-  if(link.hostname === window.location.hostname){
-    link.addEventListener("click", function(e){
-      const href = this.getAttribute("href");
-      if(!href || href.startsWith("#")) return;
+const toggle = document.getElementById("navToggle");
+const mobileNav = document.getElementById("mobileNav");
+toggle.onclick = () => mobileNav.classList.toggle("open");
 
-      e.preventDefault();
-      document.body.classList.add("fade-out");
-
-      setTimeout(() => {
-        window.location.href = href;
-      }, 300);
-    });
-  }
-});
+const obs=new IntersectionObserver(e=>{
+  e.forEach(i=>{if(i.isIntersecting)i.target.classList.add("show")});
+},{threshold:.15});
+document.querySelectorAll(".fade-up").forEach(el=>obs.observe(el));
 </script>
 
 </body>
