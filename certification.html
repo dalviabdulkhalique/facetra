@@ -290,6 +290,32 @@ if(toggle){
   toggle.onclick = () => mobileNav.classList.toggle("open");
 }
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const reveals = document.querySelectorAll(".fade-up, .reveal");
+
+  const showNow = (el) => el.classList.add("show");
+
+  // Show hero immediately
+  reveals.forEach(el => {
+    if(el.closest(".hero-section")) showNow(el);
+  });
+
+  // Scroll reveal
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        showNow(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  reveals.forEach(el => observer.observe(el));
+
+});
+</script>
 
 </body>
 </html>
