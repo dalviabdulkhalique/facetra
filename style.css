@@ -883,3 +883,65 @@ body.page{
   }
 
 }
+/* ===============================
+   ABOUT PAGE BLOCK GRID
+================================ */
+
+.authority-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:36px;
+  margin-top:50px;
+}
+
+.authority-card{
+  background:linear-gradient(to bottom,#0f1612,#0b110e);
+  border:1px solid rgba(201,162,77,.25);
+  padding:34px 28px;
+  transition:.4s;
+}
+
+.authority-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 30px rgba(201,162,77,.12);
+}
+
+.authority-card h3{
+  font-family:Cinzel,serif;
+  color:var(--gold);
+  margin-bottom:12px;
+}
+
+.authority-card ul{
+  padding-left:18px;
+}
+
+.authority-card li{
+  margin-bottom:8px;
+  line-height:1.7;
+}
+
+/* ===============================
+   ABOUT HERO FIX
+================================ */
+
+.hero-inner{
+  text-align:center;
+  padding-top:150px;
+}
+
+/* ===============================
+   PAGE BACKGROUND FIX
+================================ */
+
+body.page{
+  background:radial-gradient(circle at top,#121a16,#050806);
+}
+
+/* ===============================
+   FOOTER ICON COLOR
+================================ */
+
+.footer-contact svg{
+  stroke:var(--gold);
+}
