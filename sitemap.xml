@@ -3,17 +3,32 @@
 
   <url>
     <loc>https://facetra.in/</loc>
-    <priority>1.0</priority>
+    <priority>1.00</priority>
   </url>
 
   <url>
     <loc>https://facetra.in/about.html</loc>
-    <priority>0.8</priority>
+    <priority>0.90</priority>
   </url>
 
   <url>
     <loc>https://facetra.in/why-facetra.html</loc>
-    <priority>0.8</priority>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://facetra.in/certification.html</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://facetra.in/collection.html</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://facetra.in/contact.html</loc>
+    <priority>0.80</priority>
   </url>
 
 </urlset>
