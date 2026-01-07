@@ -1268,3 +1268,59 @@ body.page{
     padding:90px 24px;
   }
 }
+/* ===============================
+   WHY FACETRA PAGE
+================================ */
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:40px;
+  margin:60px 0;
+}
+
+.why-card{
+  background:linear-gradient(180deg,#0c1310,#070b09);
+  border:1px solid rgba(201,162,77,.35);
+  padding:44px 34px;
+  transition:.4s ease;
+}
+
+.why-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 26px rgba(201,162,77,.35);
+}
+
+.why-card h3{
+  font-family:Cinzel,serif;
+  color:var(--gold2);
+  font-size:22px;
+  margin-bottom:12px;
+}
+
+.why-card p{
+  font-size:15px;
+  line-height:1.9;
+  margin-bottom:14px;
+}
+
+.why-card ul{
+  list-style:none;
+}
+
+.why-card li{
+  font-size:14px;
+  margin-bottom:6px;
+  color:#e4ddb9;
+}
+
+.authority-list{
+  list-style:none;
+  margin-top:20px;
+}
+
+.authority-list li{
+  font-size:15px;
+  margin-bottom:10px;
+  color:#e8e0b5;
+}
