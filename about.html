@@ -20,7 +20,7 @@
 
 <header class="header">
   <div class="logo">
-    <img src="logo.png" alt="FACETRA Logo">
+    <img src="logo.png" alt="FACETRA Premium Gemstone Trading House Logo">
     <div>
       <h1>FACETRA</h1>
       <span>Gems • Diamonds • Stones</span>
@@ -33,58 +33,96 @@
     <a href="why-facetra.html">Why FACETRA</a>
     <a href="contact.html">Contact</a>
   </nav>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
 </header>
 
-<main class="content">
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="toggleMenu()">Home</a>
+  <a href="about.html" onclick="toggleMenu()">About FACETRA</a>
+  <a href="why-facetra.html" onclick="toggleMenu()">Why FACETRA</a>
+  <a href="contact.html" onclick="toggleMenu()">Contact</a>
+</div>
 
-<section class="page-hero">
-  <h2>About FACETRA</h2>
-  <p>
-    FACETRA is a premium gemstone trading house based in Mumbai, India, specializing in ethically sourced,
-    internationally certified natural gemstones curated for discerning collectors.
-  </p>
-</section>
+<main class="authority-wrapper">
 
-<section class="page-section">
-  <h3>Our Philosophy</h3>
-  <p>
-    At FACETRA, gemstones are regarded as natural assets shaped by time, geology, and rarity.
-    Every stone is evaluated for authenticity, certification alignment, and long-term value.
-  </p>
-</section>
+  <!-- HERO -->
+  <section class="authority-hero">
+    <h1>About FACETRA</h1>
+    <p>
+      FACETRA is a premium gemstone trading house based in Mumbai, India,
+      specializing in ethically sourced, internationally certified natural gemstones.
+      We serve collectors, investors, and connoisseurs seeking authenticity,
+      rarity, and long-term value.
+    </p>
+  </section>
 
-<section class="page-section">
-  <h3>What We Specialize In</h3>
-  <ul>
-    <li>Diamonds</li>
-    <li>Rubies</li>
-    <li>Sapphires</li>
-    <li>Emeralds</li>
-    <li>Selected semi-precious gemstones</li>
-  </ul>
-</section>
+  <!-- PHILOSOPHY -->
+  <section class="authority-section">
+    <h2>Our Philosophy</h2>
+    <p>
+      At FACETRA, gemstones are regarded as timeless natural assets shaped by
+      geological forces, rarity, and precision craftsmanship.
+      Every stone undergoes meticulous evaluation for authenticity,
+      certification alignment, provenance, and long-term appreciation potential.
+    </p>
+  </section>
 
-<section class="page-section">
-  <h3>Ethics & Certification</h3>
-  <p>
-    FACETRA operates with strict transparency. All gemstones are natural, responsibly sourced,
-    and aligned with international certification standards.
-  </p>
-</section>
+  <!-- SPECIALIZATION -->
+  <section class="authority-section">
+    <h2>What We Specialize In</h2>
+    <ul class="authority-list">
+      <li>Natural Diamonds with International Certification</li>
+      <li>Fine Rubies, Sapphires, and Emeralds</li>
+      <li>Investment-grade Precious Gemstones</li>
+      <li>Carefully Selected Semi-Precious Stones</li>
+      <li>Collector and Portfolio-grade Natural Assets</li>
+    </ul>
+  </section>
 
-<section class="page-section">
-  <h3>Leadership</h3>
-  <p>
-    FACETRA is led by <strong>Abdul Khalique</strong>, Founder & Gemstone Consultant,
-    combining traditional expertise with modern global trade practices.
-  </p>
-</section>
+  <!-- ETHICS -->
+  <section class="authority-section">
+    <h2>Ethics & Certification</h2>
+    <p>
+      Transparency and integrity are the foundation of FACETRA.
+      Every gemstone offered is natural, responsibly sourced,
+      and aligned with globally recognized certification standards.
+      Our practices reflect strict compliance with ethical trade principles.
+    </p>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section class="authority-section">
+    <h2>Leadership</h2>
+    <p>
+      FACETRA is led by <strong>Abdul Khalique</strong>,
+      Founder & Gemstone Consultant, combining generational industry knowledge
+      with modern global gemstone trade expertise.
+    </p>
+
+    <div class="authority-highlight">
+      <h3>Our Commitment</h3>
+      <p>
+        FACETRA exists to protect trust in gemstone trading.
+        We do not chase volume — we curate value.
+        Every gemstone represents legacy, discipline, and enduring worth.
+      </p>
+    </div>
+  </section>
 
 </main>
 
-<footer>
+<footer class="authority-footer">
   © 2026 FACETRA. All rights reserved.
 </footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById("mobileMenu").classList.toggle("open");
+}
+</script>
 
 </body>
 </html>
