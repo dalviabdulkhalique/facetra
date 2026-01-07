@@ -1208,3 +1208,63 @@ body.page{
   }
 
 }
+/* ===============================
+   COLLECTION PAGE
+================================ */
+
+.collection-section{
+  padding:120px 40px;
+  background:linear-gradient(to bottom,#050806,#0b120f);
+}
+
+.collection-grid{
+  max-width:1200px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:40px;
+}
+
+.collection-card{
+  background:linear-gradient(180deg,#0c1310,#070b09);
+  border:1px solid rgba(201,162,77,.35);
+  padding:44px 34px;
+  transition:.4s ease;
+}
+
+.collection-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 26px rgba(201,162,77,.35);
+}
+
+.collection-card h2{
+  font-family:Cinzel,serif;
+  color:var(--gold2);
+  font-size:24px;
+  margin-bottom:14px;
+}
+
+.collection-card p{
+  font-size:15px;
+  line-height:1.9;
+  margin-bottom:14px;
+}
+
+.collection-card ul{
+  list-style:none;
+  margin-bottom:22px;
+}
+
+.collection-card li{
+  font-size:14px;
+  margin-bottom:6px;
+  color:#e4ddb9;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+  .collection-section{
+    padding:90px 24px;
+  }
+}
