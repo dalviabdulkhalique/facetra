@@ -562,3 +562,102 @@ body{
     padding:50px 26px;
   }
 }
+/* =====================================================
+   PART 4 — PREMIUM FOOTER
+   ===================================================== */
+
+.site-footer{
+  background:linear-gradient(to bottom,#050806,#020403);
+  border-top:1px solid rgba(201,162,77,.25);
+  padding:90px 40px 0;
+}
+
+.footer-main{
+  max-width:1300px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1.3fr .8fr .9fr;
+  gap:70px;
+  padding-bottom:70px;
+}
+
+/* BRAND */
+.footer-brand p{
+  font-size:14px;
+  line-height:1.8;
+  color:#cfd4d1;
+}
+
+.footer-logo-row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:14px;
+}
+
+.footer-logo-row img{
+  width:44px;
+}
+
+.footer-brand-name{
+  font-family:Cinzel,serif;
+  color:var(--gold2);
+  letter-spacing:1.4px;
+  font-size:18px;
+}
+
+/* LINKS */
+.footer-links h4,
+.footer-contact h4{
+  font-family:Cinzel,serif;
+  color:var(--gold2);
+  margin-bottom:18px;
+}
+
+.footer-links a{
+  display:block;
+  margin-bottom:10px;
+  font-size:14px;
+  color:#cfd4d1;
+  transition:.3s;
+}
+
+.footer-links a:hover{
+  color:var(--gold2);
+  transform:translateX(4px);
+}
+
+/* CONTACT */
+.footer-contact .contact-item{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:14px;
+  font-size:14px;
+  color:#cfd4d1;
+}
+
+.footer-contact svg{
+  width:18px;
+  height:18px;
+  stroke:var(--gold2);
+  fill:none;
+  stroke-width:1.5;
+}
+
+/* LEGAL */
+.footer-bottom{
+  border-top:1px solid rgba(201,162,77,.15);
+  text-align:center;
+  padding:18px;
+  font-size:13px;
+  color:#aaa;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .footer-main{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+}
