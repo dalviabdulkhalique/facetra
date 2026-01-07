@@ -19,19 +19,20 @@
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- ================= PREMIUM HEADER ================= -->
 <header class="site-header">
   <div class="header-inner">
-    <a href="index.html" class="brand">
-      <img src="logo.png" alt="FACETRA Logo">
+
+    <div class="brand">
+      <img src="logo.png" alt="FACETRA Logo" class="brand-logo">
       <div class="brand-text">
         <span class="brand-name">FACETRA</span>
         <span class="brand-tag">Gems • Diamonds • Stones</span>
       </div>
-    </a>
+    </div>
 
     <nav class="main-nav">
-      <a class="active" href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="collection.html">Collection</a>
       <a href="certification.html">Certification</a>
       <a href="why-facetra.html">Why FACETRA</a>
@@ -39,14 +40,15 @@
       <a href="contact.html">Contact</a>
     </nav>
 
-    <div class="nav-toggle" onclick="toggleMenu()">
+    <div class="nav-toggle" id="navToggle">
       <span></span><span></span><span></span>
     </div>
+
   </div>
 </header>
 
-<!-- MOBILE NAV -->
-<div class="mobile-nav" id="mobileMenu">
+<!-- ================= MOBILE NAV ================= -->
+<div class="mobile-nav" id="mobileNav">
   <a href="index.html">Home</a>
   <a href="collection.html">Collection</a>
   <a href="certification.html">Certification</a>
@@ -56,112 +58,54 @@
 </div>
 
 <!-- ================= HERO ================= -->
-<section class="hero">
-  <div class="hero-content">
-    <img src="logo.png" class="hero-logo" alt="FACETRA Logo">
+<section class="hero-section">
 
-    <h1>FACETRA</h1>
-    <h2>Premium Gemstone Trading House</h2>
+  <div class="hero-inner fade-up">
 
-    <p>
-      Based in Mumbai, FACETRA specializes in ethically sourced, internationally certified natural
-      diamonds, rubies, sapphires, emeralds and rare collector-grade gemstones curated for investors
-      and connoisseurs seeking long-term value and authenticity.
+    <img src="logo.png" alt="FACETRA Emblem" class="hero-logo">
+
+    <h1 class="hero-title">FACETRA</h1>
+    <h2 class="hero-subtitle">Premium Gemstone Trading House</h2>
+
+    <p class="hero-description">
+      Based in Mumbai, FACETRA specializes in ethically sourced, internationally certified
+      natural diamonds, rubies, sapphires, emeralds and rare collector-grade gemstones curated
+      for investors and connoisseurs seeking long-term value and authenticity.
     </p>
 
     <div class="hero-actions">
-      <span class="btn-outline">Coming Soon</span>
-      <a class="btn-gold" href="https://wa.me/918055113448" target="_blank">Enquire via WhatsApp</a>
+      <span class="btn-outline-gold">Coming Soon</span>
+      <a href="https://wa.me/918055113448" target="_blank" class="btn-gold-glow">
+        Enquire via WhatsApp
+      </a>
     </div>
+
   </div>
+
 </section>
 
-<!-- ================= FEATURE GRID ================= -->
-<section class="feature-grid">
-  <div class="feature-card">
-    <div class="icon-wrap">
-      <svg viewBox="0 0 24 24"><path d="M12 2l9 5-9 15L3 7z"/></svg>
-    </div>
-    <h3>Certified Authenticity</h3>
-    <p>All gemstones are verified by globally recognized laboratories ensuring complete transparency.</p>
-  </div>
+<!-- placeholder for next sections -->
+<div style="height:300px"></div>
 
-  <div class="feature-card">
-    <div class="icon-wrap">
-      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
-    </div>
-    <h3>Investment Grade Quality</h3>
-    <p>Hand-selected stones chosen for rarity, clarity and appreciation potential.</p>
-  </div>
-
-  <div class="feature-card">
-    <div class="icon-wrap">
-      <svg viewBox="0 0 24 24"><path d="M2 12h20"/></svg>
-    </div>
-    <h3>Ethical Sourcing</h3>
-    <p>Responsible procurement with documented provenance and ethical mining practices.</p>
-  </div>
-
-  <div class="feature-card">
-    <div class="icon-wrap">
-      <svg viewBox="0 0 24 24"><path d="M12 2v20"/></svg>
-    </div>
-    <h3>Global Trade Standards</h3>
-    <p>Aligned with IGI and GIA evaluation standards across international markets.</p>
-  </div>
-</section>
-
-<!-- ================= TRUST ================= -->
-<section class="trust-section">
-  <h2>Trusted by Collectors & Investors</h2>
-  <p>
-    FACETRA works with private collectors, jewelers, investment advisors and international buyers who
-    value discretion, precision and verified authenticity in every transaction.
-  </p>
-  <a href="about.html" class="btn-gold">Learn More About FACETRA</a>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="site-footer">
-  <div class="footer-grid">
-
-    <div class="footer-brand">
-      <img src="logo.png" alt="FACETRA Logo">
-      <h3>FACETRA</h3>
-      <p>
-        Premium gemstone trading house delivering certified natural gemstones curated for collectors,
-        jewelers and long-term investors.
-      </p>
-    </div>
-
-    <div class="footer-links">
-      <h4>Quick Links</h4>
-      <a href="collection.html">Collection</a>
-      <a href="certification.html">Certification</a>
-      <a href="why-facetra.html">Why FACETRA</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact</a>
-    </div>
-
-    <div class="footer-contact">
-      <h4>Contact Information</h4>
-      <p>info@facetra.in</p>
-      <p>+91 80551 13448</p>
-      <p>Mumbai, Maharashtra, India</p>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    © 2026 FACETRA. All rights reserved.
-  </div>
-</footer>
-
+<!-- ================= JS ================= -->
 <script>
-function toggleMenu(){
-  document.getElementById("mobileMenu").classList.toggle("open");
-}
+/* MOBILE NAV */
+const toggle = document.getElementById("navToggle");
+const mobileNav = document.getElementById("mobileNav");
+toggle.onclick = () => mobileNav.classList.toggle("open");
+
+/* SCROLL ANIMATIONS */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+},{threshold:0.12});
+
+document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
 </script>
 
 </body>
+
 </html>
