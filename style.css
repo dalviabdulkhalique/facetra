@@ -980,9 +980,10 @@ body.page{
 }
 
 .footer- img{
-  width:38px;
-  height:auto;
+  height:34px;   /* same as header logo */
+  width:auto;
 }
+
 
 .footer- span{
   font-family:Cinzel,serif;
