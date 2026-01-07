@@ -20,7 +20,7 @@
 
 <header class="header">
   <div class="logo">
-    <img src="logo.png" alt="FACETRA Logo">
+    <img src="logo.png" alt="FACETRA Premium Gemstone Trading House Logo">
     <div>
       <h1>FACETRA</h1>
       <span>Gems • Diamonds • Stones</span>
@@ -33,60 +33,100 @@
     <a href="why-facetra.html" class="active">Why FACETRA</a>
     <a href="contact.html">Contact</a>
   </nav>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
 </header>
 
-<main class="content">
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="toggleMenu()">Home</a>
+  <a href="about.html" onclick="toggleMenu()">About FACETRA</a>
+  <a href="why-facetra.html" onclick="toggleMenu()">Why FACETRA</a>
+  <a href="contact.html" onclick="toggleMenu()">Contact</a>
+</div>
 
-<section class="page-hero">
-  <h2>Why Choose FACETRA</h2>
-  <p>
-    FACETRA exists for clients who value authenticity, certification, and long-term trust
-    in gemstone trading.
-  </p>
-</section>
+<main class="authority-wrapper">
 
-<section class="page-section">
-  <h3>Certified Natural Gemstones</h3>
-  <p>
-    FACETRA deals exclusively in natural gemstones aligned with internationally recognized
-    certification standards.
-  </p>
-</section>
+  <!-- HERO -->
+  <section class="authority-hero">
+    <h1>Why Choose FACETRA</h1>
+    <p>
+      In an industry where trust defines value, FACETRA stands for
+      uncompromising authenticity, transparent sourcing, and disciplined gemstone curation.
+      We do not trade in volume — we trade in legacy-grade natural assets.
+    </p>
+  </section>
 
-<section class="page-section">
-  <h3>Transparency Without Compromise</h3>
-  <p>
-    Every gemstone is disclosed clearly — origin, treatment status, and quality factors are
-    communicated honestly.
-  </p>
-</section>
+  <!-- DIFFERENCE -->
+  <section class="authority-section">
+    <h2>Precision Over Promotion</h2>
+    <p>
+      Unlike mass-market gemstone platforms, FACETRA focuses on carefully evaluated
+      natural stones selected for rarity, certification integrity, and long-term desirability.
+      Each gemstone passes multi-level scrutiny before becoming part of our curated portfolio.
+    </p>
+  </section>
 
-<section class="page-section">
-  <h3>Curated, Not Mass-Market</h3>
-  <p>
-    FACETRA follows a selective approach, prioritizing rarity and quality over volume-based selling.
-  </p>
-</section>
+  <!-- CERTIFICATION -->
+  <section class="authority-section">
+    <h2>International Certification Alignment</h2>
+    <p>
+      All gemstones offered by FACETRA are aligned with globally recognized laboratory
+      certification standards. Documentation, grading integrity, and stone provenance are
+      treated as essential — never optional.
+    </p>
+  </section>
 
-<section class="page-section">
-  <h3>Ethical Sourcing</h3>
-  <p>
-    Ethical sourcing is central to FACETRA’s business model, ensuring integrity and sustainability.
-  </p>
-</section>
+  <!-- INVESTMENT -->
+  <section class="authority-section">
+    <h2>Collector and Investment Perspective</h2>
+    <p>
+      FACETRA approaches gemstones not only as luxury objects but as geological assets
+      with intrinsic scarcity. Our selection philosophy considers market stability,
+      rarity dynamics, and long-term appreciation potential.
+    </p>
+  </section>
 
-<section class="page-section">
-  <h3>Built for Long-Term Trust</h3>
-  <p>
-    FACETRA focuses on long-term relationships, education, and consistency rather than quick transactions.
-  </p>
-</section>
+  <!-- ETHICS -->
+  <section class="authority-section">
+    <h2>Ethical Trade Commitment</h2>
+    <p>
+      Responsible sourcing and ethical trade practices are embedded into every transaction.
+      FACETRA aligns with transparent supply chains and rejects any compromise on integrity
+      within gemstone procurement.
+    </p>
+  </section>
+
+  <!-- TRUST -->
+  <section class="authority-section">
+    <h2>Relationship-Based Trading</h2>
+    <p>
+      We believe gemstone trading is built on relationships, not transactions.
+      Clients work directly with expert consultants who understand individual objectives —
+      whether for collection, customization, or portfolio diversification.
+    </p>
+
+    <div class="authority-highlight">
+      <h3>FACETRA Promise</h3>
+      <p>
+        We commit to long-term trust, certified authenticity, and disciplined selection.
+        FACETRA exists to protect the value and reputation of natural gemstones — not dilute it.
+      </p>
+    </div>
+  </section>
 
 </main>
 
-<footer>
+<footer class="authority-footer">
   © 2026 FACETRA. All rights reserved.
 </footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById("mobileMenu").classList.toggle("open");
+}
+</script>
 
 </body>
 </html>
